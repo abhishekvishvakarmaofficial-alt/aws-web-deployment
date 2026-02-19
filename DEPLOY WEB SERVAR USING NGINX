@@ -1,0 +1,21 @@
+DEPLOY WEB SERVAR USING NGINX
+open instance : with port .no 80 and 22 ,Source: 0.0.0.0/0
+launch instance
+see public ip and copy
+search on google (public ip)
+it shows error
+go on instance : sudo -i (for go on root user)
+update package : sudo apt update -y
+then install nginx service :apt install nginx -y
+🔹 Start and Enable Service through this commands
+: sudo systemctl start nginx
+: sudo systemctl enable nginx 
+for check status : sudo systemctl status nginx
+then open brouser and search : http://<Public-IP>
+then it shows result : welcome to nginx!
+after that go on instance in root user  : cd /var/www/html/
+after that in editor mode switch  : sudo vim /var/www/html/index.html
+go on insert mode and type :<h1>deploy copy link adress</h1>
+it shows nginx service  or template deploy successfully for check go
+ on brouser or google and refresh the public ip search  (here shows your deployment template,video ,images)
+
